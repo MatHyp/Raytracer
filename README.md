@@ -1,7 +1,6 @@
 # Ray Tracer - Graphics and Visualization Final Project
 
 ![Ray Tracing Example](images/with-wavefront-obj.png)  
-*Example scene rendered with shadows, reflections, and complex materials*
 
 ## Overview  
 This project is a fully functional CPU-based ray tracer developed as the final assignment for the **Graphics and Visualization** course. Ray tracing simulates the physical behavior of light to generate photorealistic images by tracing rays from the camera through each pixel and calculating interactions with objects in a 3D scene. Built in C++, this implementation includes advanced features like recursive reflections, dynamic shadows, and optimized acceleration structures.
@@ -60,3 +59,12 @@ raytracer/
 ├── setup.sh               # Environment setup script
 └── ...                    # Other system-generated files
 ```
+
+## How to Build and Run
+
+Use the provided `./setup.sh` script:
+
+```sh
+./setup.sh
+```
+
