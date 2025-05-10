@@ -1,6 +1,6 @@
 # Ray Tracer - Graphics and Visualization Final Project
 
-![Ray Tracing Example](images/final.png)  
+![Ray Tracing Example](images/with-wavefront-obj.png)  
 *Example scene rendered with shadows, reflections, and complex materials*
 
 ## Overview  
@@ -27,3 +27,35 @@ This project is a fully functional CPU-based ray tracer developed as the final a
 ---
 
 ## Project Structure  
+
+raytracer/
+├── .git/                   # Git version control data
+├── 3rd/                   # Third-party libraries (GLM)
+├── __MACOSX/              # macOS system metadata (auto-generated)
+├── bin/                   # Compiled binaries
+├── cmake-build-debug/     # CLion build directory
+├── images/                # Rendered output images
+├── obj-models/            # 3D models in Wavefront OBJ format
+├── resources/             # Textures and material definitions
+├── src/                   # Source code
+│   ├── CImage.cpp         # Image handling implementation
+│   ├── CImage.hpp         # Image handling header
+│   ├── CObject.cpp        # Base object implementation
+│   ├── CObject.hpp        # Base object header
+│   ├── CRay.cpp           # Ray operations implementation
+│   ├── CRay.hpp           # Ray operations header
+│   ├── CRayTrace.cpp      # Core ray tracing logic
+│   ├── CRayTrace.hpp      # Ray tracing headers
+│   ├── CScene.cpp         # Scene configuration
+│   ├── CScene.hpp         # Scene headers
+│   ├── WaveFrontParser.cpp # OBJ parser implementation
+│   ├── WaveFrontParser.hpp # OBJ parser header
+│   ├── main.cpp           # Main entry point
+│   └── rt.h               # Common headers
+├── vcpkg/                 # C++ package manager
+│
+├── .gitignore             # Git ignore rules
+├── CMakeLists.txt         # CMake build configuration
+├── README.md              # Project documentation
+├── setup.sh               # Environment setup script
+└── ...                    # Other system-generated files
