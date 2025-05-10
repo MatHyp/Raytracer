@@ -27,7 +27,7 @@ This project is a fully functional CPU-based ray tracer developed as the final a
 ---
 
 ## Project Structure  
-
+```
 raytracer/
 ├── .git/                   # Git version control data
 ├── 3rd/                   # Third-party libraries (GLM)
@@ -59,3 +59,4 @@ raytracer/
 ├── README.md              # Project documentation
 ├── setup.sh               # Environment setup script
 └── ...                    # Other system-generated files
+```
