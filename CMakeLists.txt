@@ -47,11 +47,3 @@ add_executable(rt ${SOURCE_FILES}
 
 target_include_directories(rt PUBLIC ${OpenCV_INCLUDE_DIRS})
 target_link_libraries(rt PUBLIC ${OpenCV_LIBRARIES})
-
-
-
-
-
-
-
-

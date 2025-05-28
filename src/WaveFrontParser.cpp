@@ -53,7 +53,6 @@ void WaveFrontParser::parseWavefront()
 
                 vss >> vIdx >> vtIdx >> vnIdx;
 
-
                 if (vIdx < 1 || vIdx > v.size())
                 {
                     std::cerr << "Invalid vertex index in face: " << vIdx << std::endl;
@@ -76,7 +75,6 @@ void WaveFrontParser::parseWavefront()
             {
                 std::cerr << "Face with < 3 vertices ignored." << std::endl;
             }
-
         }
     }
 }
@@ -101,4 +99,3 @@ const std::string &WaveFrontParser::getPath() const
 {
     return _path;
 }
-

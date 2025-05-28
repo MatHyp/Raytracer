@@ -12,30 +12,28 @@
 /// \brief Class with output structure.
 ///
 
-class COutput {
+class COutput
+{
 public:
-    float energy; ///< Ray energy.
-    int tree; ///< Ray tree counter.
+    float energy;  ///< Ray energy.
+    int tree;      ///< Ray tree counter.
     glm::vec3 col; ///< Color associated with the ray
-
 };
-
-
-
 
 /// \class CRayTrace
 /// \brief Main ray tracer class.
 ///
 
-class CRayTrace {
+class CRayTrace
+{
 
 public:
-    static bool compPrimaryRayMatrix(const CCamera& cam, glm::mat3& mat);
-    bool rayTrace(const CScene& scene, CRay &ray, COutput& res);
-    static CRay reflectedRay(const CRay& ray, const glm::vec3& n, const glm::vec3& pos);
-    
+    static bool compPrimaryRayMatrix(const CCamera &cam, glm::mat3 &mat);
+    bool rayTrace(const CScene &scene, CRay &ray, COutput &res);
+    static CRay reflectedRay(const CRay &ray, const glm::vec3 &n, const glm::vec3 &pos);
+
+    bool findClosestHit(const CRay &ray, const BVHNode *node, float &closestT, CObject *&hitObj) const;
+    bool anyHit(const CRay &ray, const BVHNode *node, float tMin, float tMax) const;
 };
-
-
 
 #endif /* CRayTrace_hpp */

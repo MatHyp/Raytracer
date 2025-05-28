@@ -7,11 +7,11 @@
 
 #include "rt.h"
 
-class WaveFrontParser {
-    std::vector<glm::vec3> v;                   // Raw vertices (from "v" lines)
-    std::vector<glm::vec3> vn_interpolation;    // Vertex normals (from "vn" lines)
-    std::vector<glm::vec3> triangle_vertices;   // Processed triangles (from "f" lines)
-
+class WaveFrontParser
+{
+    std::vector<glm::vec3> v;                 // Raw vertices (from "v" lines)
+    std::vector<glm::vec3> vn_interpolation;  // Vertex normals (from "vn" lines)
+    std::vector<glm::vec3> triangle_vertices; // Processed triangles (from "f" lines)
 
     std::string _path;
 
@@ -23,12 +23,10 @@ public:
     void parseWavefront();
 
     // Getters
-    const std::vector<glm::vec3>& getTriangleVertices() const;
-    const std::vector<glm::vec3>& getNormals() const;
-    const std::vector<glm::vec3>& getVertices() const;
-    const std::string& getPath() const;
+    const std::vector<glm::vec3> &getTriangleVertices() const;
+    const std::vector<glm::vec3> &getNormals() const;
+    const std::vector<glm::vec3> &getVertices() const;
+    const std::string &getPath() const;
 };
 
-
-
-#endif //WAVEFRONTPARSER_HPP
+#endif // WAVEFRONTPARSER_HPP
